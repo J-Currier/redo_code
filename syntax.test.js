@@ -1,7 +1,13 @@
 import functions from './syntax'
 
 test('variable type', () => {
-    expect(functions.variableType(1)).toBe("Int");
+    expect(functions.variableType(1)).toBe("number");
+    expect(functions.variableType("hello")).toBe("string");
+    expect(functions.variableType(true)).toBe("boolean");
+    expect(functions.variableType(NaN)).toBe("number");
+    expect(functions.variableType()).toBe("undefined");
+    expect(functions.variableType({'good': 'morning'})).toBe("object");
+
 });
 
 

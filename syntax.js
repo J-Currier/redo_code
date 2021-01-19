@@ -1,6 +1,7 @@
 const functions = {
     variableType: (myNum) => {
-        return 'none';
+        console.log(myNum, typeof myNum)
+        return (typeof myNum);
     },
 
 
