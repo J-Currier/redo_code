@@ -1,8 +1,8 @@
-import functions from '.syntax'
+import functions from './syntax'
 
 test('variable type', () => {
     expect(functions.variableType(1)).toBe("Int");
-})
+});
 
 
 

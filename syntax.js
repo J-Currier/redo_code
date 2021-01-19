@@ -1,7 +1,7 @@
 const functions = {
     variableType: (myNum) => {
-        return 'none'
-    }
+        return 'none';
+    },
 
 
 
