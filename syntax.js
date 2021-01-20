@@ -1,8 +1,15 @@
 const functions = {
+    //define attributes or variables
     variableType: (myNum) => {
-        console.log(myNum, typeof myNum)
         return (typeof myNum);
     },
+    ifElse: (myNum) => {
+        if (myNum <= 10) {
+            return 'low';
+        } else {
+            return 'high';
+        }
+    }
 
 
 

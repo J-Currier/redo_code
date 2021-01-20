@@ -10,6 +10,11 @@ test('variable type', () => {
 
 });
 
+test('if/else', () => {
+    expect(functions.ifElse(7)).toBe('low');
+    expect(functions.ifElse(25)).toBe('high');
+})
+
 
 
 
