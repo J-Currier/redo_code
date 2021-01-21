@@ -29,6 +29,19 @@ const functions = {
         return myArray
     },
 
+    //loops
+    forLoop: (reit) => {
+        let start = 0
+        console.log(start, reit)
+        for (let i = 0; i < reit; i++) {
+            start += 2;
+        }
+        return start
+
+    },
+
+
+
 
 
 };

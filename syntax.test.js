@@ -27,6 +27,10 @@ test('update value', () => {
     expect(functions.updateValues('q', 2, [1, 2, 3, 4, 5])).toStrictEqual([1, 2, 'q', 4, 5])
 })
 
+test('for loop', () => {
+    expect(functions.forLoop(7)).toBe(14)
+})
+
 
 
 
