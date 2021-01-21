@@ -13,7 +13,11 @@ test('variable type', () => {
 test('if/else', () => {
     expect(functions.ifElse(7)).toBe('low');
     expect(functions.ifElse(25)).toBe('high');
-})
+});
+
+test('add to front', () => {
+    expect(functions.addToFront(7, [2, 4, 't' ])).toStrictEqual([7, 2, 4, 't'])
+});
 
 
 
