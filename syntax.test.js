@@ -19,6 +19,14 @@ test('add to front', () => {
     expect(functions.addToFront(7, [2, 4, 't' ])).toStrictEqual([7, 2, 4, 't'])
 });
 
+test('add to end', () => {
+    expect(functions.addToEnd('r', [2, 5, 't'])).toStrictEqual([2, 5, 't', 'r'])
+})
+
+test('update value', () => {
+    expect(functions.updateValues('q', 2, [1, 2, 3, 4, 5])).toStrictEqual([1, 2, 'q', 4, 5])
+})
+
 
 
 

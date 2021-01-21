@@ -17,7 +17,17 @@ const functions = {
     addToFront: (myItem, myArray) => {
         myArray.unshift(myItem)
         return myArray;
-    }
+    },
+
+    addToEnd: (myItem, myArray) => {
+        myArray.push(myItem)
+        return myArray
+    },
+
+    updateValues: (myItem, myPosition, myArray) => {
+        myArray[myPosition] = myItem;
+        return myArray
+    },
 
 
 
