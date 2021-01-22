@@ -16,20 +16,39 @@ test('if/else', () => {
 });
 
 test('add to front', () => {
-    expect(functions.addToFront(7, [2, 4, 't' ])).toStrictEqual([7, 2, 4, 't'])
+    expect(functions.addToFront(7, [2, 4, 't' ])).toStrictEqual([7, 2, 4, 't']);
 });
 
 test('add to end', () => {
-    expect(functions.addToEnd('r', [2, 5, 't'])).toStrictEqual([2, 5, 't', 'r'])
-})
+    expect(functions.addToEnd('r', [2, 5, 't'])).toStrictEqual([2, 5, 't', 'r']);
+});
 
 test('update value', () => {
-    expect(functions.updateValues('q', 2, [1, 2, 3, 4, 5])).toStrictEqual([1, 2, 'q', 4, 5])
-})
+    expect(functions.updateValues('q', 2, [1, 2, 3, 4, 5])).toStrictEqual([1, 2, 'q', 4, 5]);
+});
 
 test('for loop', () => {
-    expect(functions.forLoop(7)).toBe(14)
-})
+    expect(functions.forLoop(7)).toBe(14);
+});
+
+test('for/in loop', () => {
+    expect(functions.forInLoop({a:1, b:2, c:3, d:4})).toStrictEqual({a:2, b:3, c:4, d:5});
+});
+
+test('while loop', () => {
+    expect(functions.whileLoop(5)).toBe(25);
+});
+
+test('do/while loop', () => {
+    expect(functions.doWhileLoop(4)).toBe(24);
+});
+
+test('for each array', () => {
+    expect(functions.forEachArrayLoop([ 'hi', 'hello', 'bonjour'])).toStrictEqual([ 'hi!', 'hello!', 'bonjour!']);
+});
+
+
+
 
 
 

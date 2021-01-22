@@ -32,12 +32,48 @@ const functions = {
     //loops
     forLoop: (reit) => {
         let start = 0
-        console.log(start, reit)
         for (let i = 0; i < reit; i++) {
             start += 2;
         }
         return start
 
+    },
+
+    forInLoop: (myObject) => {
+        for (let myItem in myObject) {
+            myObject[myItem] = (myObject[myItem] + 1);
+        }
+        return myObject
+    },
+
+    whileLoop: (myNum) => {
+        let startNum = 0;
+        let i = 0;
+        while ( i < myNum) {
+            startNum +=5;
+            i++;
+        }
+        return startNum
+    },
+
+    doWhileLoop: (myNum) => {
+        let startNum = 1;
+        let i =0;
+        do {
+            i++;
+            startNum = (startNum * i);
+        } while (i < myNum);
+        return startNum;
+    },
+
+    forEachArrayLoop: (myArray) => {
+        myArray.forEach((myObj) => { 
+            console.log(myObj)
+            myObj = (myObj + '!');
+        console.log(myArray[myObj])
+        console.log(myArray);
+        });
+        return myArray;
     },
 
 
