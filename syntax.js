@@ -11,7 +11,7 @@ const functions = {
         } else {
             return 'high';
         }
-    },
+    }, 
 
     //arrays
     addToFront: (myItem, myArray) => {
@@ -67,12 +67,12 @@ const functions = {
     },
 
     forEachArrayLoop: (myArray) => {
-        myArray.forEach((myObj) => { 
+        myArray.forEach(function (myObj, index) { 
             console.log(myObj)
-            myObj = (myObj + '!');
-        console.log(myArray[myObj])
-        console.log(myArray);
-        });
+            this[index]  = (myObj + '!');
+            // console.log(myArray[myObj])
+            console.log(myArray);
+        }, myArray);
         return myArray;
     },
 
