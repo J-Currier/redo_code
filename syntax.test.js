@@ -47,6 +47,10 @@ test('for each array', () => {
     expect(functions.forEachArrayLoop([ 'hi', 'hello', 'bonjour'])).toStrictEqual([ 'hi!', 'hello!', 'bonjour!']);
 });
 
+test('object look up', () => {
+    expect(functions.objectLookUp({a:1, b:2, c:3}, 'b')).toBe(2);
+});
+
 
 
 

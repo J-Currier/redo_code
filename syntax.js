@@ -67,14 +67,15 @@ const functions = {
     },
 
     forEachArrayLoop: (myArray) => {
-        myArray.forEach(function (myObj, index) { 
-            console.log(myObj)
+        myArray.forEach(function (myObj, index) {  // you ca't use => function as this is not bound then
             this[index]  = (myObj + '!');
-            // console.log(myArray[myObj])
-            console.log(myArray);
-        }, myArray);
+        }, myArray); //myArray is the second argument passed to the for each function and acts as the 'this' item. Without the second argumant 'this' is undefined -it is not by default the array passed in
         return myArray;
     },
+
+    objectLookUp: (myObj, myIndex) => {
+        return (myObj[myIndex])
+    }
 
 
 
